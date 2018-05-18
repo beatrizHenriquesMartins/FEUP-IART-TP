@@ -1,0 +1,41 @@
+E(S) = sum(n, i=1, pi log2(pi))
+     = (-3/8 log2(3/8) ) + (-5/8 log2(5/8)) 
+     = 0.954
+
+Gain(S, A) = E(S) - sum(|A|, j=1, pj * E(Sj))
+           = E(S) - E(cl/A)
+
+E(emigra/idade) = 3/8 * [-1/3 * log2(1/3) + (-2/3) * log2(2/3)] + 5/8 * [-2/5 * log2(2/5) + (-3/5) * log2(3/5)]
+                = 0.951
+
+E(emigracao/nacionalidade) = alemaes + franceses + italianos + 
+                                   = 4/8 * [-2/4 *log2(2/4) + (-2/4) * log2(2/4)] + 1/8 * [0] + 3/8 * [0]
+                                   = 0,5
+
+E(nacionalidade/situação familiar) = 0.607
+
+entropia só é calculada para conjuntos impuros
+
+-- Alemão
+E(emigra/idade) = 2/4 * [1] + 2/4 * [1] = 1
+
+E(emigra/situação familiar) = 2/4 * [0] + 2/4 * [0] = 0
+
+              nacionalidade
+                   /|\
+                  / | \
+                 /  |  \
+                /   |   \
+               /    |    \
+              /     |     \
+             /      |      \
+            /   francesa    \    
+           /                 \
+          /                   \
+        alemã             italiana
+          /\
+         /  \         
+        /    \
+       /      \
+     sim      não
+(solteiro)  (casado)
